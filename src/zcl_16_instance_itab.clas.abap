@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_16_instance_itab IMPLEMENTATION.
+CLASS ZCL_16_INSTANCE_ITAB IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -47,5 +48,4 @@ CLASS zcl_16_instance_itab IMPLEMENTATION.
     APPEND connection TO connections.
 
   ENDMETHOD.
-
 ENDCLASS.
