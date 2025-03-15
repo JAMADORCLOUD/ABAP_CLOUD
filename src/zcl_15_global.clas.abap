@@ -12,12 +12,14 @@ ENDCLASS.
 
 
 
-CLASS zcl_15_global IMPLEMENTATION.
+CLASS ZCL_15_GLOBAL IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
 * Add New Local Class (Local Types)
 * lcl -> Ctrl + Space.
+
 
     DATA connection TYPE REF TO lcl_connection.
 *    DATA connection2 TYPE REF TO lcl_connection.
@@ -31,9 +33,11 @@ CLASS zcl_15_global IMPLEMENTATION.
 
     connection = NEW #( ).  "Instance
     APPEND connection TO connections.
+
     connection = NEW #( ).  "Instance
     APPEND connection TO connections.
 
-  ENDMETHOD.
 
+
+  ENDMETHOD.
 ENDCLASS.

@@ -10,7 +10,10 @@ CLASS zcl_10_example DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_10_example IMPLEMENTATION.
+
+
+CLASS ZCL_10_EXAMPLE IMPLEMENTATION.
+
 
 METHOD if_oo_adt_classrun~main.
 
@@ -101,5 +104,4 @@ METHOD if_oo_adt_classrun~main.
     ENDTRY.
 
 ENDMETHOD.
-
 ENDCLASS.

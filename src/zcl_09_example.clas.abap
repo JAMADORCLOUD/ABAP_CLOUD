@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_09_example IMPLEMENTATION.
+CLASS ZCL_09_EXAMPLE IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -73,5 +74,4 @@ CLASS zcl_09_example IMPLEMENTATION.
     ENDCASE.
 
   ENDMETHOD.
-
 ENDCLASS.

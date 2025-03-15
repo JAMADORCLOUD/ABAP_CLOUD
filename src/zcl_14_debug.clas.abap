@@ -9,7 +9,10 @@ CLASS zcl_14_debug DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_14_debug IMPLEMENTATION.
+
+
+CLASS ZCL_14_DEBUG IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -119,5 +122,4 @@ CLASS zcl_14_debug IMPLEMENTATION.
     out->write( name = `Repayment Plan:` data = repayment_plan ).
 
   ENDMETHOD.
-
 ENDCLASS.

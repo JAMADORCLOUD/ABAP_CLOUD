@@ -1,0 +1,70 @@
+managed implementation in class ZBP_R_TA_01_CXN unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_TA_01_CXN alias cnx
+persistent table ZTA_01_CXN
+draft table ZTA_01_CXN_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+  field ( readonly )
+   Uuid,
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( numbering : managed )
+   Uuid;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+// Adding here the action to trigger our validation
+//  draft determine action Prepare;
+  draft determine action Prepare {
+    validation CheckSemanticKey;
+    validation validatePrice;
+    validation validateCurrencyCode;
+  }
+
+// Our validation gets registered here for CREATE and UPDATE events.
+  validation CheckSemanticKey on save {create; update;}
+
+  validation validatePrice on save { create; field Price; }
+
+  validation validateCurrencyCode on save { create; field CurrencyCode; }
+
+// Custom determination logic
+  determination GetCities on save { field airportfrom, airportto; }
+
+  mapping for ZTA_01_CXN
+  {
+    Uuid = uuid;
+    Carrid = carrid;
+    Connid = connid;
+    AirportFrom = airport_from;
+    CityFrom = city_from;
+    CountryFrom = country_from;
+    AirportTo = airport_to;
+    CityTo = city_to;
+    CountryTo = country_to;
+    Price = price;
+    CurrencyCode = currency_code;
+    LocalCreatedBy = local_created_by;
+    LocalCreatedAt = local_created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+
+}

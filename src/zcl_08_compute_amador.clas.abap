@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_08_compute_amador IMPLEMENTATION.
+CLASS ZCL_08_COMPUTE_AMADOR IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -34,5 +35,4 @@ CLASS zcl_08_compute_amador IMPLEMENTATION.
     out->write( output ).
 
   ENDMETHOD.
-
 ENDCLASS.

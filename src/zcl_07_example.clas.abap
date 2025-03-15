@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_07_example IMPLEMENTATION.
+CLASS ZCL_07_EXAMPLE IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -68,5 +69,4 @@ CLASS zcl_07_example IMPLEMENTATION.
     out->write( text ).
 
   ENDMETHOD.
-
 ENDCLASS.

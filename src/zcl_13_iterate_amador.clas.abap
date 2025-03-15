@@ -11,7 +11,10 @@ CLASS zcl_13_iterate_amador DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_13_iterate_amador IMPLEMENTATION.
+
+
+CLASS ZCL_13_ITERATE_AMADOR IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -50,5 +53,4 @@ CLASS zcl_13_iterate_amador IMPLEMENTATION.
                 ) .
 
   ENDMETHOD.
-
 ENDCLASS.

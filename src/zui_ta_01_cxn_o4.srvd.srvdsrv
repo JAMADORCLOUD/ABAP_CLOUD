@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_TA_01_CXN'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TA_01_CXN'
+  }
+}
+define service ZUI_TA_01_CXN_O4 provider contracts odata_v4_ui {
+  expose ZC_TA_01_CXN as cnx;
+}

@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_TA_02_PRICE000'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TA_02_PRICE000'
+  }
+}
+define service ZUI_TA_02_PRICE000_O4 provider contracts odata_v4_ui {
+  expose ZC_TA_02_PRICE000 as CON3;
+}

@@ -12,8 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_01_hello_amador IMPLEMENTATION.
-
+CLASS ZCL_01_HELLO_AMADOR IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
