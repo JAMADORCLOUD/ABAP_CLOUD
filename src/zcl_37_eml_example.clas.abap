@@ -17,7 +17,7 @@ CLASS zcl_37_eml_example IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
 
     DATA update_tab TYPE TABLE FOR UPDATE /DMO/R_AgencyTP.
-    update_tab = VALUE #( ( agencyID = '070002' Name = 'MODIFIED Agency' ) ). "  CVC Brasil
+    update_tab = VALUE #( ( agencyID = '070002' Name = 'MODIFIED Agency' ) ). "  CVC Brasil2
 
     MODIFY ENTITIES OF /DMO/R_AgencyTP
     ENTITY /DMO/agency
