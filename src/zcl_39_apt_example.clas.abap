@@ -14,10 +14,13 @@ CLASS zcl_39_apt_example IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
-*    INSERT INTO zta_01_cxn VALUES @( VALUE #( client = '100'
-*                                              uuid = 9
-*                                              carrid = '7'
-*                                              connid = '777'
+    INSERT INTO zta_03_p_flight VALUES @( VALUE #( client = '100'
+**                                              uuid = 1
+                                              carrier_id = 'SQ'
+                                              connection_id = '0012'
+                                              flight_date = cl_abap_context_info=>get_system_date( )
+                                              timzone = sy-zonlo ) ).
+*                                              flight_date = sy-datum ) ).
 *                                              airport_from = 'MTY'
 *                                              city_from = 'Monterrey'
 *                                              country_from = 'MEX'
@@ -31,7 +34,7 @@ CLASS zcl_39_apt_example IMPLEMENTATION.
 *                                              last_changed_at = '20252802135037' ) ).
 
 *    DELETE zta_01_cxn FROM @( VALUE #( uuid = 13 ) ).
-    DELETE FROM ZTA_01_CXN_D.
+*    DELETE FROM ZTA_03_P_flight.
 
     out->write(  sy-dbcnt ).
 
