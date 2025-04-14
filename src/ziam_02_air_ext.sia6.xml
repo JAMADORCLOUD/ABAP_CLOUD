@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZIAM_02_AIR_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>Airport</DESCRIPTION>
+     <RESPONSIBLE>CB9980011779</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>TRL</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZS4D400_AMADOR</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZIAM_02_AIR_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <AUTH>
+     <item>
+      <AUTH_OBJECT>/DMO/TRVL</AUTH_OBJECT>
+      <STATUS>U</STATUS>
+      <TEXT>Authorization Object for Travel Scenario</TEXT>
+      <AUTH_ITEM>
+       <item>
+        <UUID>Cl53BR7FH9CF0VBiPci/WA==</UUID>
+        <AUTH_OBJECT>/DMO/TRVL</AUTH_OBJECT>
+        <AUTH_OBJECT_INSTANCE>0001</AUTH_OBJECT_INSTANCE>
+        <TEXT>Authorization Object for Travel Scenario</TEXT>
+        <STATUS>U</STATUS>
+        <VALUES>
+         <item>
+          <FIELD>ACTVT</FIELD>
+          <VALUE>Create or generate,Change,Display,Delete</VALUE>
+          <VALUES>
+           <item>
+            <UUID>Cl53BR7FH9CF0VBiPcjfWA==</UUID>
+            <LOW_VALUE>01</LOW_VALUE>
+           </item>
+           <item>
+            <UUID>Cl53BR7FH9CF0VBiPcj/WA==</UUID>
+            <LOW_VALUE>02</LOW_VALUE>
+           </item>
+           <item>
+            <UUID>Cl53BR7FH9CF0VBiPckfWA==</UUID>
+            <LOW_VALUE>03</LOW_VALUE>
+           </item>
+           <item>
+            <UUID>Cl53BR7FH9CF0VBiPck/WA==</UUID>
+            <LOW_VALUE>06</LOW_VALUE>
+           </item>
+          </VALUES>
+          <TEXT>Activity</TEXT>
+          <STATUS>U</STATUS>
+          <IS_ACTVT>X</IS_ACTVT>
+         </item>
+         <item>
+          <FIELD>/DMO/CNTRY</FIELD>
+          <VALUE>DE</VALUE>
+          <VALUES>
+           <item>
+            <UUID>Cl53BR7FH9CF0VBiPclfWA==</UUID>
+            <LOW_VALUE>DE</LOW_VALUE>
+           </item>
+          </VALUES>
+          <TEXT>C/R</TEXT>
+          <STATUS>U</STATUS>
+         </item>
+        </VALUES>
+       </item>
+      </AUTH_ITEM>
+     </item>
+    </AUTH>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

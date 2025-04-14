@@ -1,0 +1,11 @@
+@EndUserText.label: 'Autorization Control Airports'
+@MappingRole: true
+define role ZAC_01_AIRPORTS_AUT {
+    grant 
+        select
+            on
+                ZCDS_01_AIRPORTS 
+                    where
+                        ( country ) = aspect pfcg_auth( /DMO/TRVL , /DMO/CNTRY, Actvt = '03' );
+                        
+}
