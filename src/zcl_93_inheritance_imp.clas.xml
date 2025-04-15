@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_87_SOR_HAS_TABLES</CLSNAME>
+    <CLSNAME>ZCL_93_INHERITANCE_IMP</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Sorted And Hashed Tables IMPORTANT</DESCRIPT>
+    <DESCRIPT>Inheritance Implementation</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
