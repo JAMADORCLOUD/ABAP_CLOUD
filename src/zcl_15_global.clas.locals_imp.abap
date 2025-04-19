@@ -2,6 +2,7 @@
 *"* local helper classes, interface definitions and type
 *"* declarations
 CLASS lcl_connection DEFINITION. "create private.
+"Add lcl Then Ctrl + Space Create a new implementation
 
   PUBLIC SECTION.
 

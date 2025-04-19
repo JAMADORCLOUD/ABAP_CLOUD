@@ -33,23 +33,23 @@
         <VALUES>
          <item>
           <FIELD>ACTVT</FIELD>
-          <VALUE>Create or generate,Display,Change,Delete</VALUE>
+          <VALUE>Create or generate,Delete,Change,Display</VALUE>
           <VALUES>
            <item>
             <UUID>Cl53BR7FH9CF0SLCT6kfWA==</UUID>
             <LOW_VALUE>01</LOW_VALUE>
            </item>
            <item>
-            <UUID>Cl53BR7FH9CF0SLCT6k/WA==</UUID>
-            <LOW_VALUE>03</LOW_VALUE>
+            <UUID>Cl53BR7FH9CF0SLCT6l/WA==</UUID>
+            <LOW_VALUE>06</LOW_VALUE>
            </item>
            <item>
             <UUID>Cl53BR7FH9CF0SLCT6lfWA==</UUID>
             <LOW_VALUE>02</LOW_VALUE>
            </item>
            <item>
-            <UUID>Cl53BR7FH9CF0SLCT6l/WA==</UUID>
-            <LOW_VALUE>06</LOW_VALUE>
+            <UUID>Cl53BR7FH9CF0SLCT6k/WA==</UUID>
+            <LOW_VALUE>03</LOW_VALUE>
            </item>
           </VALUES>
           <TEXT>Activity</TEXT>
